@@ -1,0 +1,25 @@
+[project]
+name = "log-agent-agentic-ai-for-intelligent-log-monitoring"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.15"
+dependencies = [
+    "fastapi>=0.165.0",
+    "httpx>=0.28.1",
+    "langchain>=1.5.2",
+    "langchain-core>=1.8.4",
+    "langchain-google-genai>=4.5.2",
+    "pydantic>=2.14.4",
+    "pydantic-settings>=2.16.3",
+    "python-dotenv>=1.2.4",
+    "python-multipart>=0.0.34",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+log-agent-agentic-ai-for-intelligent-log-monitoring = "log_agent_agentic_ai_for_intelligent_log_monitoring:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
